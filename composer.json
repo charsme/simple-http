@@ -1,0 +1,26 @@
+{
+    "name": "chars/simple-http",
+    "description": "Simple http psr7 implementation",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Charis",
+            "email": "me@chars.me"
+        }
+    ],
+    "require": {
+            "php": "^7.0",
+            "psr/http-message": "^1.0@stable"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0@stable",
+        "phpunit/php-code-coverage": "^5.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Resilient\\Http\\": "src"
+        }
+    },
+    "minimum-stability": "stable"
+}
