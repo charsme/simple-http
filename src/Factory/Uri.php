@@ -14,7 +14,7 @@ class Uri
      * @static
      * @return Resilient\Http\Uri
      */
-    public static function createFromServer($serv)
+    public static function createFromServer ($serv)
     {
         $scheme = isset($serv['HTTPS']) ? 'https://' : 'http://';
         $host = !empty($serv['HTTP_HOST']) ? $serv['HTTP_HOST'] : $serv['SERVER_NAME'];
@@ -47,7 +47,7 @@ class Uri
      * @param string $uri
      * @return Resilient\Http\Uri
      */
-    public static function createFromString(string $uri)
+    public static function createFromString (string $uri)
     {
         $parts = parse_url($uri);
         $scheme = isset($parts['scheme']) ? $parts['scheme'] : '';
